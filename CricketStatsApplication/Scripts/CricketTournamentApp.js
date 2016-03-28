@@ -1,39 +1,24 @@
 ﻿var cricketModule = angular.module('CricketApp', ['ngRoute']);
 
 cricketModule.controller("TournamentSchedulerCtrl", ['$scope', '$http', function ($scope, $http) {
-    //this.Teams = [{
-    //    teamId: 1,
-    //    teamName: 'Team1'
-    //}, {
-    //    teamId: 2,
-    //    teamName: 'Team2'
-    //}, {
-    //    teamId: 3,
-    //    teamName: 'Team3'
-    //}, {
-    //    teamId: 4,
-    //    teamName: 'Team4'
-    //}];
+    $http.get('/api/tournamentservice').then(function (response) {
+        $scope.Teams = JSON.parse(response.data);
+    }, function () {
+        alert('Failure');
+    });
 
-    $http.get('/Tournament/Index').then(getTeamsSuccessCallback, getTeamsFailureCallback);
-
-    $scope.Teams = function () {
-        //return $http.get('/Tournament/Index').then(getTeamsSuccessCallback(response), getTeamsFailureCallback);
-
-
-    }
+    //$http.get('/api/tournamentservice').then(getTeamsSuccessCallback, getTeamsFailureCallback);
 }]);
 
-function getTeamsSuccessCallback(response)
-{
-    alert('Success');
-    //$scope.Teams = JSON.parse(response);
-}
+//function getTeamsSuccessCallback(response)
+//{
+//    $scope.Teams = JSON.parse(response);
+//}
 
-function getTeamsFailureCallback(response)
-{
-    alert('Failure');
-}
+//function getTeamsFailureCallback()
+//{
+//    alert('Failure');
+//}
 
 cricketModule.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
