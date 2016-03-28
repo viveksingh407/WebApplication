@@ -8,6 +8,13 @@
 @model TournamentModel
 
 <div ng-app="CricketApp">
+    @*<div>
+        <ul>
+            <li><a href="/#/Schedule">Route One</a></li>
+            <li><a href="/#/routeTwo">Route Two</a></li>
+            <li><a href="/#/routeThree">Route Three</a></li>
+        </ul>
+    </div>*@
     <div ng-controller="TournamentSchedulerCtrl">
         <table>
             <tr>
@@ -20,12 +27,13 @@
             </tr>
             <tr ng-repeat="team in Teams">
                 <td>
-                    {{ team.teamId }}
+                    {{ team.TeamId }}
                 </td>
                 <td>
-                    {{ team.teamName }}
+                    {{ team.TeamName }}
                 </td>
             </tr>
         </table>
     </div>
+    <div ng-view></div>
 </div>
