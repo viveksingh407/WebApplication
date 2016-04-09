@@ -1,28 +1,25 @@
 ﻿var cricketModule = angular.module('CricketApp', ['ngRoute']);
 
-cricketModule.controller("TournamentSchedulerCtrl", ['$scope', '$http', function ($scope, $http) {
-    $http.get('/api/tournamentservice').then(function (response) {
-        $scope.Teams = JSON.parse(response.data);
-    }, function () {
-        alert('Failure');
-    });
-
-    //$http.get('/api/tournamentservice').then(getTeamsSuccessCallback, getTeamsFailureCallback);
+cricketModule.controller("TournamentSchedulerCtrl", ['$scope', 'tournamentFactory', function ($scope, factory) {
+    factory.data().then(function (result) { $scope.Teams = result});
 }]);
 
-//function getTeamsSuccessCallback(response)
-//{
-//    $scope.Teams = JSON.parse(response);
-//}
+cricketModule.factory('tournamentFactory', ['tournamentService', '$http', function (service) {
+    var data = {};
 
-//function getTeamsFailureCallback()
-//{
-//    alert('Failure');
-//}
+    var result = service.TeamDataFromService;
 
-cricketModule.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider
-        .when('/Schedule', {
-            templateUrl: 'Tournament/Schedule'
-        });
-}]);
+    return { data: result} ;
+}])
+
+cricketModule.service('tournamentService', ['$http', function ($http) {
+    this.TeamDataFromService = function () { return $http.get('/api/tournamentservice')
+        .then(
+            function (response) {
+                return JSON.parse(response.data); 
+            }, 
+            function (response, status) {
+                console.log(response.responseText);
+            });
+    }
+}])
