@@ -9,31 +9,22 @@
 
 <div ng-app="CricketApp">
     <div ng-controller="TournamentSchedulerCtrl">
-        <table>
-            <tr>
-                <th>
-                    <span>TeamId</span>
-                </th>
-                <th>
-                    <span>TeamName</span>
-                </th>
-            </tr>
-            <tr ng-repeat="team in Teams">
-                <td>
-                    {{ team.TeamId }}
-                </td>
-                <td>
-                    {{ team.TeamName }}
-                </td>
-            </tr>
-        </table>
+        <div class="row">
+            <div class="col-md-3">
+                <span>TeamId</span>
+            </div>
+            <div class="col-md-3">
+                <span>TeamName</span>
+            </div>
+        </div>
+        <div ng-repeat="team in Teams" class="row">
+            <div class="col-md-3">
+                <span>{{ team.TeamId }}</span>
+            </div>
+            <div class="col-md-3">
+                <span>{{ team.TeamName }}</span>
+            </div>
+        </div>
     </div>
     <div ng-view></div>
 </div>
-@*<div>
-    <ul>
-        <li><a href="/#/Schedule">Route One</a></li>
-        <li><a href="/#/routeTwo">Route Two</a></li>
-        <li><a href="/#/routeThree">Route Three</a></li>
-    </ul>
-</div>*@
