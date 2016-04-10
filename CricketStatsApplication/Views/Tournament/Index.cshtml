@@ -9,22 +9,38 @@
 
 <div ng-app="CricketApp">
     <div ng-controller="TournamentSchedulerCtrl">
-        <div class="row">
+        <div class="clearfix">
             <div class="col-md-3">
-                <span>TeamId</span>
+                <input type="text" ng-model="newTeamName" />
             </div>
-            <div class="col-md-3">
-                <span>TeamName</span>
+            <div class="col-sm-2">
+                <input type="button" value="Add Team" ng-click="addNewTeam()" />
+            </div>
+            <div class="col-xs-1">
+                <input type="button" value="Delete Team" ng-click="deleteSelectedTeams()" />
             </div>
         </div>
-        <div ng-repeat="team in Teams" class="row">
-            <div class="col-md-3">
-                <span>{{ team.TeamId }}</span>
+        <div>
+            <div>
+                <h4>Teams</h4>
             </div>
-            <div class="col-md-3">
-                <span>{{ team.TeamName }}</span>
+            <div class="clearfix">
+                <div class="col-xs-2">
+                    <input type="checkbox" ng-click="selectAll($event)" />
+                </div>
+                <div class="col-sm-3">
+                    <span>Team Name</span>
+                </div>
+            </div>
+            <div ng-repeat="team in Teams" class="clearfix">
+                <div class="col-xs-2">
+                    <input type="checkbox" />
+                    <span ng-hide="true">{{ team.TeamId }}</span>
+                </div>
+                <div class="col-sm-3">
+                    <span>{{ team.TeamName }}</span>
+                </div>
             </div>
         </div>
     </div>
-    <div ng-view></div>
 </div>

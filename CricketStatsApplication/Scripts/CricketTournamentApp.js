@@ -1,7 +1,30 @@
 ﻿var cricketModule = angular.module('CricketApp', ['ngRoute']);
 
 cricketModule.controller("TournamentSchedulerCtrl", ['$scope', 'tournamentFactory', function ($scope, factory) {
-    factory.data().then(function (result) { $scope.Teams = result});
+    $scope.newTeamName = '';
+
+    factory.data().then(function (result) { $scope.Teams = result });
+
+    $scope.addNewTeam = function () {
+        $scope.Teams.push({ 'TeamId': $scope.Teams.length + 1, 'TeamName': $scope.newTeamName });
+        $scope.newTeamName = '';
+    };
+
+    $scope.selectAll = function ($event) {
+        var checkbox = $event.target;
+
+        var isChecked = checkbox.checked ? true : false;
+        $('input:checkbox').each(function (index, selector) { $(selector).prop('checked', isChecked); })
+    };
+
+    $scope.deleteSelectedTeams = function () {
+        $('input:checkbox:checked').siblings('span').each(function (index, control) {
+            var removeItem = $(control).html();
+            $scope.Teams = jQuery.grep($scope.Teams, function (value, control) {
+                return value.TeamId != removeItem;
+            });
+        })
+    };
 }]);
 
 cricketModule.factory('tournamentFactory', ['tournamentService', '$http', function (service) {
