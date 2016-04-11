@@ -1,0 +1,401 @@
+{
+	"TournamentId": 1,
+	"TournamentName": "T20BigBash",
+	"Matches": null,
+	"Teams": [{
+		"TeamId": 1,
+		"TeamName": "Team1",
+		"Matches": null,
+		"Players": [{
+			"PlayerId": 1,
+			"PlayerName": "Team1Player1"
+		},
+		{
+			"PlayerId": 2,
+			"PlayerName": "Team1Player2"
+		},
+		{
+			"PlayerId": 3,
+			"PlayerName": "Team1Player3"
+		},
+		{
+			"PlayerId": 4,
+			"PlayerName": "Team1Player4"
+		},
+		{
+			"PlayerId": 5,
+			"PlayerName": "Team1Player5"
+		},
+		{
+			"PlayerId": 6,
+			"PlayerName": "Team1Player6"
+		},
+		{
+			"PlayerId": 7,
+			"PlayerName": "Team1Player7"
+		},
+		{
+			"PlayerId": 8,
+			"PlayerName": "Team1Player8"
+		},
+		{
+			"PlayerId": 9,
+			"PlayerName": "Team1Player9"
+		},
+		{
+			"PlayerId": 10,
+			"PlayerName": "Team1Player10"
+		},
+		{
+			"PlayerId": 11,
+			"PlayerName": "Team1Player11"
+		}]
+	},
+	{
+		"TeamId": 2,
+		"TeamName": "Team2",
+		"Matches": null,
+		"Players": [{
+			"PlayerId": 1,
+			"PlayerName": "Team2Player1"
+		},
+		{
+			"PlayerId": 2,
+			"PlayerName": "Team2Player2"
+		},
+		{
+			"PlayerId": 3,
+			"PlayerName": "Team2Player3"
+		},
+		{
+			"PlayerId": 4,
+			"PlayerName": "Team2Player4"
+		},
+		{
+			"PlayerId": 5,
+			"PlayerName": "Team2Player5"
+		},
+		{
+			"PlayerId": 6,
+			"PlayerName": "Team2Player6"
+		},
+		{
+			"PlayerId": 7,
+			"PlayerName": "Team2Player7"
+		},
+		{
+			"PlayerId": 8,
+			"PlayerName": "Team2Player8"
+		},
+		{
+			"PlayerId": 9,
+			"PlayerName": "Team2Player9"
+		},
+		{
+			"PlayerId": 10,
+			"PlayerName": "Team2Player10"
+		},
+		{
+			"PlayerId": 11,
+			"PlayerName": "Team2Player11"
+		}]
+	},
+	{
+		"TeamId": 3,
+		"TeamName": "Team3",
+		"Matches": null,
+		"Players": [{
+			"PlayerId": 1,
+			"PlayerName": "Team3Player1"
+		},
+		{
+			"PlayerId": 2,
+			"PlayerName": "Team3Player2"
+		},
+		{
+			"PlayerId": 3,
+			"PlayerName": "Team3Player3"
+		},
+		{
+			"PlayerId": 4,
+			"PlayerName": "Team3Player4"
+		},
+		{
+			"PlayerId": 5,
+			"PlayerName": "Team3Player5"
+		},
+		{
+			"PlayerId": 6,
+			"PlayerName": "Team3Player6"
+		},
+		{
+			"PlayerId": 7,
+			"PlayerName": "Team3Player7"
+		},
+		{
+			"PlayerId": 8,
+			"PlayerName": "Team3Player8"
+		},
+		{
+			"PlayerId": 9,
+			"PlayerName": "Team3Player9"
+		},
+		{
+			"PlayerId": 10,
+			"PlayerName": "Team3Player10"
+		},
+		{
+			"PlayerId": 11,
+			"PlayerName": "Team3Player11"
+		}]
+	},
+	{
+		"TeamId": 4,
+		"TeamName": "Team4",
+		"Matches": null,
+		"Players": [{
+			"PlayerId": 1,
+			"PlayerName": "Team4Player1"
+		},
+		{
+			"PlayerId": 2,
+			"PlayerName": "Team4Player2"
+		},
+		{
+			"PlayerId": 3,
+			"PlayerName": "Team4Player3"
+		},
+		{
+			"PlayerId": 4,
+			"PlayerName": "Team4Player4"
+		},
+		{
+			"PlayerId": 5,
+			"PlayerName": "Team4Player5"
+		},
+		{
+			"PlayerId": 6,
+			"PlayerName": "Team4Player6"
+		},
+		{
+			"PlayerId": 7,
+			"PlayerName": "Team4Player7"
+		},
+		{
+			"PlayerId": 8,
+			"PlayerName": "Team4Player8"
+		},
+		{
+			"PlayerId": 9,
+			"PlayerName": "Team4Player9"
+		},
+		{
+			"PlayerId": 10,
+			"PlayerName": "Team4Player10"
+		},
+		{
+			"PlayerId": 11,
+			"PlayerName": "Team4Player11"
+		}]
+	},
+	{
+		"TeamId": 5,
+		"TeamName": "Team5",
+		"Matches": null,
+		"Players": [{
+			"PlayerId": 1,
+			"PlayerName": "Team5Player1"
+		},
+		{
+			"PlayerId": 2,
+			"PlayerName": "Team5Player2"
+		},
+		{
+			"PlayerId": 3,
+			"PlayerName": "Team5Player3"
+		},
+		{
+			"PlayerId": 4,
+			"PlayerName": "Team5Player4"
+		},
+		{
+			"PlayerId": 5,
+			"PlayerName": "Team5Player5"
+		},
+		{
+			"PlayerId": 6,
+			"PlayerName": "Team5Player6"
+		},
+		{
+			"PlayerId": 7,
+			"PlayerName": "Team5Player7"
+		},
+		{
+			"PlayerId": 8,
+			"PlayerName": "Team5Player8"
+		},
+		{
+			"PlayerId": 9,
+			"PlayerName": "Team5Player9"
+		},
+		{
+			"PlayerId": 10,
+			"PlayerName": "Team5Player10"
+		},
+		{
+			"PlayerId": 11,
+			"PlayerName": "Team5Player11"
+		}]
+	},
+	{
+		"TeamId": 6,
+		"TeamName": "Team6",
+		"Matches": null,
+		"Players": [{
+			"PlayerId": 1,
+			"PlayerName": "Team6Player1"
+		},
+		{
+			"PlayerId": 2,
+			"PlayerName": "Team6Player2"
+		},
+		{
+			"PlayerId": 3,
+			"PlayerName": "Team6Player3"
+		},
+		{
+			"PlayerId": 4,
+			"PlayerName": "Team6Player4"
+		},
+		{
+			"PlayerId": 5,
+			"PlayerName": "Team6Player5"
+		},
+		{
+			"PlayerId": 6,
+			"PlayerName": "Team6Player6"
+		},
+		{
+			"PlayerId": 7,
+			"PlayerName": "Team6Player7"
+		},
+		{
+			"PlayerId": 8,
+			"PlayerName": "Team6Player8"
+		},
+		{
+			"PlayerId": 9,
+			"PlayerName": "Team6Player9"
+		},
+		{
+			"PlayerId": 10,
+			"PlayerName": "Team6Player10"
+		},
+		{
+			"PlayerId": 11,
+			"PlayerName": "Team6Player11"
+		}]
+	},
+	{
+		"TeamId": 7,
+		"TeamName": "Team7",
+		"Matches": null,
+		"Players": [{
+			"PlayerId": 1,
+			"PlayerName": "Team7Player1"
+		},
+		{
+			"PlayerId": 2,
+			"PlayerName": "Team7Player2"
+		},
+		{
+			"PlayerId": 3,
+			"PlayerName": "Team7Player3"
+		},
+		{
+			"PlayerId": 4,
+			"PlayerName": "Team7Player4"
+		},
+		{
+			"PlayerId": 5,
+			"PlayerName": "Team7Player5"
+		},
+		{
+			"PlayerId": 6,
+			"PlayerName": "Team7Player6"
+		},
+		{
+			"PlayerId": 7,
+			"PlayerName": "Team7Player7"
+		},
+		{
+			"PlayerId": 8,
+			"PlayerName": "Team7Player8"
+		},
+		{
+			"PlayerId": 9,
+			"PlayerName": "Team7Player9"
+		},
+		{
+			"PlayerId": 10,
+			"PlayerName": "Team7Player10"
+		},
+		{
+			"PlayerId": 11,
+			"PlayerName": "Team7Player11"
+		}]
+	},
+	{
+		"TeamId": 8,
+		"TeamName": "Team8",
+		"Matches": null,
+		"Players": [{
+			"PlayerId": 1,
+			"PlayerName": "Team8Player1"
+		},
+		{
+			"PlayerId": 2,
+			"PlayerName": "Team8Player2"
+		},
+		{
+			"PlayerId": 3,
+			"PlayerName": "Team8Player3"
+		},
+		{
+			"PlayerId": 4,
+			"PlayerName": "Team8Player4"
+		},
+		{
+			"PlayerId": 5,
+			"PlayerName": "Team8Player5"
+		},
+		{
+			"PlayerId": 6,
+			"PlayerName": "Team8Player6"
+		},
+		{
+			"PlayerId": 7,
+			"PlayerName": "Team8Player7"
+		},
+		{
+			"PlayerId": 8,
+			"PlayerName": "Team8Player8"
+		},
+		{
+			"PlayerId": 9,
+			"PlayerName": "Team8Player9"
+		},
+		{
+			"PlayerId": 10,
+			"PlayerName": "Team8Player10"
+		},
+		{
+			"PlayerId": 11,
+			"PlayerName": "Team8Player11"
+		}]
+	}],
+	"StartDate": "2016-04-15T00:00:00",
+	"EndDate": "2016-04-30T00:00:00",
+	"TotalGames": 63,
+	"AvailableGameDays": 1
+}
